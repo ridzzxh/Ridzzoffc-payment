@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Payment 𝐑𝐢𝐝𝐳𝐳𝐱 𝐨𝐟𝐟𝐜</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://img1.pixhost.to/images/6630/613505788_vinzx.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 64px;
+      margin-bottom: 35px;
+      text-shadow: 3px 3px 8px #000;
+    }
+
+    button {
+      background-color: #00ffcc;
+      color: black;
+      padding: 20px 45px;
+      font-size: 26px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-bottom: 35px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00c9a7;
+    }
+
+    #payment {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 18px;
+      font-size: 30px;
+      line-height: 2.2;
+      max-width: 95%;
+    }
+
+    #payment h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    img.qris {
+      margin-top: 30px;
+      width: 280px;
+      border-radius: 16px;
+      box-shadow: 0 0 12px white;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Payment 𝐑𝐢𝐝𝐳𝐳𝐱 𝐨𝐟𝐟𝐜</h1>
+  <button onclick="showPayment()">Lanjutkan</button>
+
+  <div id="payment">
+    <h2>Metode Pembayaran</h2>
+    <p><strong>Dana:</strong> 08895601103</p>
+    <p><strong>Gopay:</strong> 082221149370</p>
+    <p><strong>OVO:</strong> 082221149370</p>
+    <p><strong>Qris:</strong></p>
+    <img src="https://img1.pixhost.to/images/6643/613740816_vinzx.jpg" alt="QRIS" class="qris">
+  </div>
+
+  <!-- Lagu: Walau Dunia Membenci -->
+  <audio autoplay loop>
+    <source src="lagu walau dunia membenci.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutaran audio.
+  </audio>
+
+  <script>
+    function showPayment() {
+      document.getElementById("payment").style.display = "block";
+    }
+  </script>
+</body>
+</html>
